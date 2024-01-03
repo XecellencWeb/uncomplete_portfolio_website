@@ -1,0 +1,200 @@
+:root{
+    --curve-w:200vw;
+    --percent:35%;
+}
+
+
+
+
+.text_1{
+    font-size: var(--size-1) !important;
+}
+.text_1 > *, .text_1 *{
+    font-size: var(--size-1) !important;
+}
+.text_2{
+    font-size: var(--size-2) !important;
+}
+.text_3{
+    font-size: var(--size-3) !important;
+}
+.text_4{
+    font-size: var(--size-4) !important;
+}
+.text_5{
+    font-size: var(--size-5) !important;
+}
+.text_6{
+    font-size: var(--size-6) !important;
+}
+.text_7{
+    font-size: var(--size-7) !important;
+}
+.text_auto{
+    font-size: clamp(2rem,1rem + 5vw,4rem)
+}
+
+
+.t_view_less{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.font_croissant{
+    font-family: var(--font_croissant) !important;
+}
+
+.font_abril{
+    font-family: var(--font_abril) !important;
+}
+.font_alfa{
+    font-family: var(--font_alfa) !important;
+}
+.font_poller{
+    font-family: var(--font_poller) !important;
+}
+.font_ultra{
+    font-family: var(--font_ultra) !important;
+}
+.font_felipa{
+    font-family: var(--font_felipa) !important;
+}
+
+
+
+
+
+.text_desc{
+    margin-block: var(--size-4);
+    margin-inline: var(--size-1);
+}
+.text_head{
+    margin-inline: var(--size-1);
+}
+
+.wrapper{
+    width: min(100% - 3rem, var(--lg));
+    margin-inline: auto;
+}
+.small_wrapper{
+    width: min(100% - 3rem, var(--sm));
+    margin-inline: auto;
+}
+
+.bg--curved-bl{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-bottom-left-radius: var(--curve);
+    border-bottom-right-radius: var(--curve);
+    position: absolute;
+    bottom: 0;
+    left: var(--percent);
+    transform: translateX(calc(-1 * var(--percent)));
+    overflow: clip;
+}
+
+.curve--container{
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+}
+
+.bg--curved-b,.bg--curved-bl,.bg--curved-br,.bg--curved-tl,.bg--curved-tr,.bg--curved-t{
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg--curved-b{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-bottom-left-radius: var(--curve);
+    border-bottom-right-radius: var(--curve);
+    position: absolute;
+    bottom: 0;
+    right: var(--percent_50);
+    transform: translateX(var(--percent_50));
+    overflow: clip;
+}
+
+.bg--curved-t{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-top-left-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+    position: absolute;
+    top: 0;
+    right: var(--percent_50);
+    transform: translateX(var(--percent_50));
+    overflow: clip;
+}
+
+.bg--curved-tb{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-top-left-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+    position: absolute;
+    top: calc(100% - 10rem);
+    right: var(--percent_50);
+    transform: translateX(var(--percent_50));
+    overflow: clip;
+}
+
+
+
+
+.bg--curved-br{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-bottom-left-radius: var(--curve);
+    border-bottom-right-radius: var(--curve);
+    position: absolute;
+    bottom: 0;
+    right: var(--percent);
+    transform: translateX(var(--percent));
+    overflow: clip;
+}
+
+.bg--curved-tr{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-top-left-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+    position: absolute;
+    top: 0;
+    right: var(--percent);
+    transform: translateX(var(--percent));
+    overflow: clip;
+}
+
+.bg--curved-tl{
+    width: var(--curve-w);
+    height: var(--curve-w);
+    border-top-left-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+    position: absolute;
+    top: 0;
+    left: var(--percent);
+    transform: translateX(calc(-1 * var(--percent)));
+    overflow: clip;
+}
+
+
+.text_gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.marker_check::marker{
+    content: url('../assets/check2.svg');
+    font-size: 1.2rem;
+}
+
+.disabled-btn:disabled{
+    opacity: .7;
+}

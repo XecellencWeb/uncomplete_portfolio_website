@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'vinique';
+    src:
+     url('../../assets/web_fonts/vanique/vinque_rg.otf') format('otf'),
+     url('../../assets/web_fonts/vanique/vinque_rg-webfont.woff2') format('woff2'),
+     url('../../assets/web_fonts/vanique/vinque_rg-webfont.woff') format('woff')
+    ;
+}
+@font-face {
+    font-family: 'wavy_1';
+    src:
+     url('../../assets/web_fonts/wavy_fonts/EnjoyForest.woff2') format('woff2'),
+     url('../../assets/web_fonts/wavy_fonts/EnjoyForest.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'wavy_2';
+    src:
+     url('../../assets/web_fonts/wavy_fonts/SuperVibesRegular.woff2') format('woff2'),
+     url('../../assets/web_fonts/wavy_fonts/SuperVibesRegular.woff') format('woff')
+    ;
+}
+
+.font_wavy_1{
+    font-family: 'wavy_1' !important;
+}
+.font_wavy_2{
+    font-family: 'wavy_2' !important;
+}
+
+
+
+.font_agbalumo{
+    font-family: 'Agbalumo' !important;
+}
+

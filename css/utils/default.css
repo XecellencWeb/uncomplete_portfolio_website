@@ -1,0 +1,247 @@
+.text_primary{
+    color: var(--primary);
+}
+.text_bg{
+    color: var(--background);
+}
+
+.text_bg > *, .text_bg *{
+    color: var(--background);
+}
+.text_secondary{
+    color: var(--secondary);
+}
+.text_accent{
+    color: var(--accent);
+}
+.text_white,.text_white > *, .text_white *{
+    color: var(--white);
+}
+.text_black, .text_black  > *, .text_black *{
+    color:var(--black) !important;
+}
+
+.text_rev{
+    --rev: var(--black);
+    color: var(--rev)
+}
+.text_rev > *, .text *{
+    color: var(--rev);
+}
+
+@media (prefers-color-scheme: dark) {
+   .text_rev{
+    --rev: var(--text);
+   } 
+}
+
+.small_line{
+    line-height: .5;
+}
+
+.bg_primary{
+    background-color: var(--primary);
+}
+.bg_secondary{
+    background-color: var(--secondary);
+}
+.bg_accent{
+    background-color: var(--accent);
+}
+.bg_background{
+    background-color: var(--background);
+}
+.bg_black{
+    background-color: var(--black);
+}
+.bg_white{
+    background-color: var(--white);
+}
+
+
+
+.border_primary{
+    border-color: var(--primary);
+}
+.border_secondary{
+    border-color: var(--secondary);
+}
+.border_accent{
+    border-color: var(--accent);
+}
+.border_background{
+    border-color: var(--background);
+}
+.border_black{
+    border-color: var(--black);
+}
+.border_white{
+    border-color: var(--white);
+}
+
+
+.bg--primary_secondary{
+    background: linear-gradient(var(--primary),var(--secondary));
+}
+.bg--primary_accent{
+    background: linear-gradient(var(--primary),var(--accent));
+}
+.bg--secondary_primary{
+    background: linear-gradient(var(--secondary),var(--primary));
+}
+.bg--secondary_accent{
+    background: linear-gradient(var(--secondary),var(--accent));
+}
+.bg--accent_primary{
+    background: linear-gradient(var(--accent),var(--primary));
+}
+.bg--accent_secondary{
+    background: linear-gradient(var(--accent),var(--secondary));
+}
+.bg--to_primary{
+    background: linear-gradient(var(--primary_light),var(--primary));
+}
+
+
+
+
+
+.to_primary_secondary--right{
+    background: linear-gradient(to right, var(--primary),var(--secondary));
+}
+.to_primary_accent--right{
+    background: linear-gradient(to right, var(--primary),var(--accent));
+}
+.to_secondary_primary--right{
+    background: linear-gradient(to right, var(--secondary),var(--primary));
+}
+.to_secondary_accent--right{
+    background: linear-gradient(to right, var(--secondary),var(--accent));
+}
+.to_accent_primary--right{
+    background: linear-gradient(to right, var(--accent),var(--primary));
+}
+.to_accent_secondary--right{
+    background: linear-gradient(to right, var(--accent),var(--secondary));
+}
+.to_primary--right{
+    background: linear-gradient(to right, var(--primary_light),var(--primary));
+}
+
+
+.to_background_accent--right{
+    background: linear-gradient(to right, var(--background),var(--accent));
+}
+.to_background_primary--right{
+    background: linear-gradient(to right, var(--background),var(--primary));
+}
+.to_background_secondary--right{
+    background: linear-gradient(to right, var(--background),var(--secondary));
+}
+
+
+
+
+
+.to_primary_secondary--br{
+    background: linear-gradient(to bottom right, var(--primary),var(--secondary));
+}
+.to_primary_accent--br{
+    background: linear-gradient(to bottom right, var(--primary),var(--accent));
+}
+.to_secondary_primary--br{
+    background: linear-gradient(to bottom right, var(--secondary),var(--primary));
+}
+.to_secondary_accent--br{
+    background: linear-gradient(to bottom right, var(--secondary),var(--accent));
+}
+.to_accent_primary--br{
+    background: linear-gradient(to bottom right, var(--accent),var(--primary));
+}
+.to_accent_secondary--br{
+    background: linear-gradient(to bottom right, var(--accent),var(--secondary));
+}
+.to_primary--br{
+    background: linear-gradient(to bottom right, var(--primary_light),var(--primary));
+}
+
+
+
+
+
+
+.to_primary_secondary--bl{
+    background: linear-gradient(to bottom left, var(--primary),var(--secondary));
+}
+.to_primary_accent--bl{
+    background: linear-gradient(to bottom left, var(--primary),var(--accent));
+}
+.to_secondary_primary--bl{
+    background: linear-gradient(to bottom left, var(--secondary),var(--primary));
+}
+.to_secondary_accent--bl{
+    background: linear-gradient(to bottom left, var(--secondary),var(--accent));
+}
+.to_accent_primary--bl{
+    background: linear-gradient(to bottom left, var(--accent),var(--primary));
+}
+.to_accent_secondary--bl{
+    background: linear-gradient(to bottom left, var(--accent),var(--secondary));
+}
+.to_to-primary--bl{
+    background: linear-gradient(to bottom left, var(--primary_light),var(--primary));
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    z-index: 1000;
+}
+
+
+.logo_text{
+    display: none ;
+    font-family: var(--font_croissant);
+    font-size: var(--size-1);
+}
+@media (max-width:39.999rem){
+    .logo_text{
+        display: block;
+    }
+    
+}
+@media (min-width: 48rem) {
+    .logo_text{
+        display: block;
+    }
+}
+
+.must_flex{
+    display: flex !important;
+}
+
+
+.w_sm{
+    width: min(100%, var(--sm));
+}
+.w_sm_fixed{
+    width: var(--sm);
+}
+.w_md{
+    width: min(100%, var(--md));
+}
+.w_md_fixed{
+    width: min(var(--sm) ,var(--md));
+}
+.w_lg{
+    width: min(100%, var(--lg));
+}
+.w_lg_fixed{
+    width: min(var(--sm),var(--lg));
+}
+
+.head_wrapper{
+    width: min(100% - 3rem, 150ch);
+    margin-inline: auto;
+}

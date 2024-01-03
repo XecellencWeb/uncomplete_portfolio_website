@@ -1,0 +1,6 @@
+.snapper{
+    scroll-snap-type: y mandatory;
+}
+.snapper > *{
+    scroll-snap-align: top;
+}

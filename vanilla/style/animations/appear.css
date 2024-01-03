@@ -1,0 +1,9 @@
+[data-appear]{
+    opacity: 0;
+    transition: 3s opacity;
+}
+
+
+.fade-in{
+   opacity: 1; 
+}

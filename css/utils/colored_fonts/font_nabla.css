@@ -1,0 +1,19 @@
+
+
+ .font_nabla{
+    font-family: 'Nabla' !important;
+    font-size: clamp(2rem, 5vw + 1rem ,4rem);
+ }
+
+ 
+ .font_bungee{
+   font-family: 'bungee spice' !important;
+   font-size: clamp(3rem, 5vw + 1rem ,7rem);
+   text-align: center;
+}
+
+.font_kenia{
+   font-family: 'kenia';
+   font-size: clamp(3rem, 5vw + 1rem ,5rem);
+}
+

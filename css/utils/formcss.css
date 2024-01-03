@@ -1,0 +1,47 @@
+.form{
+    --r: .25rem;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding-top: 5rem;
+    min-height: 80vh;
+    gap: .5rem;
+    width: min(100% - 3rem, var(--sm));
+    background: var(--background);
+    margin-top: 2rem;
+    border-radius: var(--r);
+}
+.form_input,.form_text{
+    font-size: var(--size-1);
+}
+.form_input{
+    --text: #a8a8a8;
+    width: 100%;
+    padding: .5rem 1rem;
+    outline: none;
+    border: 2px solid var(--text);
+    border-radius: var(--r);
+    margin-inline: auto;
+}
+
+.form_input:invalid,.form_text:invalid{
+    border: 2px solid red;
+}
+
+.form_input:invalid + .error_d,{
+    content: attr(data-invalid);
+    color: red;
+    position: relative;
+    top: -.7rem;
+}
+
+.form_input:empty + .error_d,{
+    content: attr(data-empty);
+    color: red;
+    position: relative;
+    top: -.7rem;
+}
+
+.form_input[type=text]:focus,.form_input[type=password]:focus,.form_input[type=email]:focus,.form_input[type=number]:focus,.form_text:focus{
+    border: 2px solid var(--accent);
+}

@@ -1,0 +1,9 @@
+:root{
+    --success: #05e705;
+    --failure: #980404;
+    --normal: #bfbdbd;
+
+
+    --scroll: 0;
+    --page: 0;
+}

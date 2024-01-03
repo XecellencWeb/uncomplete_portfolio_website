@@ -1,0 +1,24 @@
+.upload_box{
+    width: min(100%, 50ch);
+    border: 2px dotted var(--text,#333);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    opacity: .7;
+}
+.highlight{
+    border-style: solid !important;
+    opacity: 1 !important;
+}
+
+.upload_input{
+    display: none;
+}
+.upload_input_text{
+    font-size: var(--size-1,1rem);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.upload_input_text:hover{
+    opacity: .7;
+}

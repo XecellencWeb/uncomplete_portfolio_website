@@ -1,0 +1,58 @@
+html{
+    color-scheme: light dark;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+    perspective: 1000px;
+    overflow-x: clip;
+}
+
+
+button{
+    appearance: none;
+    background: transparent;
+    border: none;
+}
+
+section{
+    margin-block: calc(var(--size-7));
+}
+section:is(:first-child, :nth-child(1)){
+    margin-top: 0 ;
+}
+
+h1,h2,h3{
+    font-family: var(--font_inclusive);
+    line-height: 1.1;
+}
+
+h1{
+    font-size: var(--size-6);
+}
+
+h2{
+    font-size: var(--size-5);    
+}
+
+h3{
+    font-size: var(--size-4);
+}
+
+p,li,button,label{
+    font-family: var(--font_mooli);
+    font-size: var(--size-3);
+    line-height: 1.5;
+}
+
+input,textarea{
+    font-family: var(--font_kanit);
+    font-size: var(--size-2);
+}

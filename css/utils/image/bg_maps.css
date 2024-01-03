@@ -1,0 +1,40 @@
+.splashed_image{
+    --splash: url('../../assets/splashed.svg');
+    --rotate: 45deg;
+    --magnitude: min(100vw,50rem);
+    --position: center;
+    -webkit-mask-image: var(--splash);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: var(--position);
+    -webkit-mask-repeat:no-repeat;
+    mask-image: var(--splash);
+    mask-size: contain;
+    mask-position: var(--position);
+    mask-repeat: no-repeat;
+    object-fit: cover;
+    width: var(--magnitude);
+    height: var(--magnitude);
+    transform: rotateX(var(--rotate)) rotateY(calc(var(--rotate) - 30deg)) ;
+    translate: 0 -50%;
+    left:clamp(-10rem,-25vw,0vw);
+}
+
+
+.mask_fade{
+    --fade:linear-gradient(
+        rgb(0 0 0 / 1),
+        rgb(0 0 0 / 0.7),
+        rgb(0 0 0 / 0.7),
+        rgb(0 0 0 / 0.3),
+        rgb(0 0 0 / 0.3),
+        rgb(0 0 0 / 0),
+        rgb(0 0 0 / 0)
+
+    );
+    -webkit-mask-image: linear-gradient(black,transparent);
+    mask-image: linear-gradient(black,transparent);
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}

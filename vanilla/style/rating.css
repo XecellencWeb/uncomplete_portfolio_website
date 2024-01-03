@@ -1,0 +1,32 @@
+.selected_rating, .selected_rating ~ *{
+    fill: orange !important;
+}
+
+
+.glassy_look{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(315deg, #2b4162 0%, var(--background,#12100e) 74%);
+    opacity: 1;
+    filter: blur(.5rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.commenter_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    isolation: isolate;
+    z-index: 100000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding:3rem 1.5rem;
+}

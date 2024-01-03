@@ -1,0 +1,42 @@
+{
+  "name": "portfolio_website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.11.2",
+    "@uploadthing/react": "^5.6.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap-icons": "^1.11.1",
+    "cloudinary": "^1.41.0",
+    "firebase": "^10.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.3",
+    "next": "^13.5.4",
+    "next-auth": "^4.23.2",
+    "nodemailer": "^6.9.5",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^3.11.174",
+    "prismjs": "^1.29.0",
+    "react": "latest",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-dom": "latest",
+    "react-icons": "^4.11.0",
+    "stripe": "^14.2.0",
+    "uploadthing": "^5.7.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Croissant+One&family=Poller+One&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+
+
+
+
+
+:root{
+--text: #212020;
+--background: #f3fbf3;
+--primary: #bc6208;
+--primary_light:#ff800000;
+--secondary: #9b0303;
+--accent: #05296b;
+--white:#f3fbf3;
+--black: #212020;
+
+
+
+--font_inclusive: 'Inclusive Sans', sans-serif;
+--font_kanit: 'Kanit', sans-serif;
+--font_libre: 'Libre Baskerville', serif;
+--font_mooli: 'Mooli', sans-serif;
+
+
+
+--font_abril: 'Abril Fatface', cursive;
+--font_alfa: 'Alfa Slab One', cursive;
+--font_croissant: 'Croissant One', cursive;
+--font_poller: 'Poller One', cursive;
+--font_ultra: 'Ultra', serif;
+--font_felipa: 'Felipa', cursive;
+
+
+
+
+--size-0: clamp(0.00rem, 0.93rem + 1.20vw, 0.72rem);
+--size-1: clamp(0.00rem, 1.16rem + 1.50vw, 0.90rem);
+--size-2: clamp(0.00rem, 1.45rem + 1.87vw, 1.13rem);
+--size-3: clamp(0.00rem, 1.82rem + 2.34vw, 1.41rem);
+--size-4: clamp(0.00rem, 2.27rem + 2.93vw, 1.76rem);
+--size-5: clamp(0.00rem, 2.84rem + 3.66vw, 2.20rem);
+--size-6: clamp(0.00rem, 3.55rem + 4.58vw, 2.75rem);
+--size-7: clamp(0.00rem, 4.43rem + 5.72vw, 3.43rem);
+
+
+--sm: 40rem;
+--md: 48rem;
+--lg: 64rem;
+
+
+--curve: 200%;
+--percent_25: 25%;
+--percent_50: 50%;
+--percent_75: 75%;
+--percent_full: 100%;
+}
+
+@media (prefers-color-scheme: dark){
+:root{
+    --text: #d6d6d6;
+    --background: #212020;
+    --primary: #ce6c09;
+--primary_light:#ff800000;
+--secondary: #cf0606;
+--accent: #0740aa;
+--white:#d7dad7;
+--black: #212020;
+}
+}

@@ -1,0 +1,390 @@
+
+.navbar_sm{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1rem;
+}
+.sm_menu{
+    background-image: url('../assets/menu_ico.svg');
+    background-color: #757474;
+    width: 40px;
+    height: 40px;
+    fill: var(--text);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: background-image 150ms;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+.sm_controller{
+    display: none;
+}
+.sm_controller:checked ~ ul{
+    display: flex;
+}
+.sm_controller:checked ~ .sm_menu{
+    background-image: url('../assets/close_ico.svg');
+}
+.sm_menu:hover{
+    fill: var(--accent);
+}
+.navbar_sm > ul{
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    list-style: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: display 1.5s;
+}
+.navbar_sm * {
+    text-decoration: none;
+    font-size: var(--size-1);
+}
+
+.navbar_sm a:not(.hover_except):hover{
+    color:var(--accent)
+}
+
+.navbar_ds{
+    display: none;
+}
+
+
+@media (min-width:40rem) {
+.navbar_sm{
+    display: none;
+}
+.navbar_ds{
+    display: block;
+    margin-top: .5rem;
+}
+.navbar_ds > ul{
+    display: flex;
+    list-style-type: none;
+    width: var(--sm);
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+.navbar_ds *{
+    display: block;
+    font-family: var(--font_libre);
+    font-size: var(--size-1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar_ds a:not(.hover_except):hover{
+    text-decoration: underline;
+}
+
+}
+
+.g_primary,.h_primary,.g_secondary,.h_secondary,.g_accent,.h_accent,.h_text, .g_text,.h_white,.g_white,.h_black,.g_black{
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+.h_text{
+    background: var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+}
+
+.g_text{
+    background: transparent;
+    border: 2px solid var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--text);
+
+}
+
+.g_text:hover{
+    text-decoration: none !important;
+    background: var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+    
+}
+
+.h_text:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--text);
+    padding: .5rem 1rem;
+    color: var(--text);
+
+}
+
+
+
+
+
+.h_primary{
+    background: var(--primary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+}
+
+.g_primary{
+    background: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--primary);
+
+}
+
+.g_primary:hover{
+    text-decoration: none !important;
+    background: var(--primary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+    
+}
+
+.h_primary:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--primary);
+    padding: .5rem 1rem;
+    color: var(--primary);
+
+}
+
+
+
+
+
+.h_background{
+    background: var(--background);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--text) !important;
+}
+
+.g_background{
+    background: transparent;
+    border: 2px solid var(--background);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+
+}
+
+.g_background:hover{
+    text-decoration: none !important;
+    background: var(--background);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--text) !important;
+    
+}
+
+.h_background:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--background);
+    padding: .5rem 1rem;
+    color: var(--background) !important;
+
+}
+
+
+
+.h_white{
+    background: var(--white);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--black) !important;
+}
+
+.g_white{
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--white);
+
+}
+
+.g_white:hover{
+    text-decoration: none !important;
+    background: var(--white);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--black) !important;
+    
+}
+
+.h_white:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--white);
+    padding: .5rem 1rem;
+    color: var(--white) !important;
+
+}
+
+
+.h_text{
+    background: var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background) !important;
+}
+
+.g_text{
+    background: transparent;
+    border: 2px solid var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--text);
+
+}
+
+.g_text:hover{
+    text-decoration: none !important;
+    background: var(--text);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background) !important;
+    
+}
+
+.h_text:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--text);
+    padding: .5rem 1rem;
+    color: var(--text) !important;
+
+}
+
+
+
+
+
+.h_black{
+    background: var(--black);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--white) !important;
+}
+
+.g_black{
+    background: transparent;
+    border: 2px solid var(--black);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--black);
+
+}
+
+.g_black:hover{
+    text-decoration: none !important;
+    background: var(--black);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--white) !important;
+    
+}
+
+.h_black:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--black);
+    padding: .5rem 1rem;
+    color: var(--black) !important;
+
+}
+
+
+.h_secondary{
+    background: var(--secondary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+}
+
+.g_secondary{
+    background: transparent;
+    border: 2px solid var(--secondary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--secondary);
+
+}
+
+.g_secondary:hover{
+    text-decoration: none !important;
+    background: var(--secondary);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+    
+}
+
+.h_secondary:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--secondary);
+    padding: .5rem 1rem;
+    color: var(--secondary);
+
+}
+
+
+
+
+
+
+.h_accent{
+    background: var(--accent);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+}
+
+.g_accent{
+    background: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--accent);
+
+}
+
+.g_accent:hover{
+    text-decoration: none !important;
+    background: var(--accent);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background);
+    
+}
+
+.h_accent:hover{
+    text-decoration: none !important;
+    background: transparent;
+    border-radius: 2rem;
+    border: 2px solid var(--accent);
+    padding: .5rem 1rem;
+    color: var(--accent);
+
+}

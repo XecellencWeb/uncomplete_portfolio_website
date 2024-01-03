@@ -1,0 +1,48 @@
+.loading_dot_container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.loading_dot{
+    --loading_unit: 5px;
+    --spacing_unit: 2px;
+    --scale_ratio: 33.33%;
+    display: block;
+    padding-inline: calc(var(--spacing_unit)/2);
+    gap: var(--spacing_unit);
+    align-items: flex-end;
+    animation: loading_dot 1000ms infinite;
+    width: calc(var(--loading_unit) * 3);
+    height: var(--size-1);
+    overflow: hidden;
+}
+.dot{
+    display: inline-block;
+    width: calc(var(--loading_unit) - var(--spacing_unit));
+    height: calc(var(--loading_unit) - var(--spacing_unit));
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
+}
+.dot:nth-child(2){
+    padding-inline: var(--spacing_unit);
+}
+
+@keyframes loading_dot {
+    0%{
+        width: 0;
+    }
+
+    50%{
+        width: var(--loading_unit);
+    }
+
+    75%{
+        width: calc(var(--loading_unit) * 2);
+    }
+
+    100%{
+        width: calc(var(--loading_unit) * 3);
+    }
+    
+}

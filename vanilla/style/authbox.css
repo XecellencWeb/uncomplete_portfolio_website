@@ -1,0 +1,33 @@
+.authbox--container{
+    scale: 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10%;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--background,#ccc);
+    border: 2px solid var(--text,#ccc);
+    transition: opacity 450ms;
+    animation: pop-in 200ms forwards;
+    width: min(100% - 2rem, 40ch);
+    z-index: 10000000000;
+
+}
+.authbox--status{
+    width: 20%;
+    font-size: var(--size-2);
+}
+.authbox--message{
+    width: 70%;
+    text-align: left;
+}
+
+@keyframes pop-in {
+    100%{
+        scale: 1 1;
+    }
+    
+}

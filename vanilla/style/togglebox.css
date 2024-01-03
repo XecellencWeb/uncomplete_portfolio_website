@@ -1,0 +1,64 @@
+.toggle_container{
+    --color:#bfbdbd;
+    --indicator_position:0;
+    --width: 4rem;
+    --radii:1rem;
+    display: block;
+    border: 2px solid var(--color);
+    position: relative;
+    width: var(--width);
+    height: 2rem;
+    border-radius: var(--radii);
+    overflow: clip;
+
+}
+.toggle_indicator{
+    position: absolute;
+    top: 0;
+    left: var(--indicator_position);
+    background-color: var(--color);
+    width: calc(var(--width)/2);
+    height: 100%;
+    border-radius: var(--radii);
+}
+.toggle_controller{
+    display: none;
+}
+
+.toggle_controller:checked + .toggle_container{
+    --color:#04d404;
+    --indicator_position: calc(100% - (var(--width)/2));
+}
+
+
+.h_success{
+    background: var(--success);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background, #d8d8d8) !important;
+}
+
+.g_success{
+    background: transparent;
+    border: 2px solid var(--success);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--success);
+
+}
+
+.h_normal{
+    background: var(--normal);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--background, #d3d2d2) !important;
+}
+
+.g_normal{
+    background: transparent;
+    border: 2px solid var(--normal);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: var(--normal);
+
+}

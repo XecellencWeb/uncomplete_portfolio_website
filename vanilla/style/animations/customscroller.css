@@ -1,0 +1,79 @@
+:root{
+   --spread: 1rem;
+   --custom-scroll: 0
+}
+
+
+[data-scroll=shrink]{
+    position: sticky;
+    top: 0;
+    transform-origin: top;
+}
+
+.shrink{
+    scale: 100% calc(100% - 1% * min(var(--scroll),20));
+}
+
+.move-up{
+    translate: 0 calc(-1% * (max(var(--scroll), 20) - 20) * 100/40);
+}
+
+
+[data-scroll = jump-up]{
+    position: relative;
+    top: calc(1vh * (min(var(--scroll), 70) - (var(--scroll) * 0.7)));
+}
+
+[data-scroll = jump-out]{
+    overflow: clip;
+    position: relative;
+    top: 0;
+    min-height: 30vh;
+
+    @media (min-width:40rem) {
+        margin-top:calc(1vh * min(var(--scroll),50))
+    }
+}
+
+
+
+
+[data-scroll = through]{
+    height: 2vh;
+    width: min(100% - 3rem, var(--lg) + 5rem);
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    translate: -50% 0 ;
+    z-index: 100;
+    scale: calc(1% * min((max(var(--scroll),30) - 30),50)/50 * 100) ;
+    box-shadow: 0 0 1rem 1rem var(--accent);
+    border-radius: 1rem;
+}
+
+
+.show_text{
+    --timing: 500ms;
+    font-size: 0rem;
+    animation: show-text var(--timing) calc(var(--current) * var(--timing)) forwards;
+}
+.off{
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes show-text {
+    100%{
+        font-size: 1.2rem;
+    }    
+}
+
+[data-scroll=rotate-up]{
+    transform-origin: bottom right;
+    rotate: min(var(--scroll) * 1deg,10deg) ;
+}
+
+[data-scroll=shadow-movement]{
+    --shadow_color: #333;
+    box-shadow: 0 0 1rem calc(var(--custom-scroll)/100 * 2rem) var(--shadow_color);
+}
